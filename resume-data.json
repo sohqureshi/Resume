@@ -1,0 +1,140 @@
+{
+  "name": "Mohammad Sohail Qureshi",
+  "title": "Full-Stack Developer",
+  "titleTags": ["Angular", "React", "Java"],
+  "location": "Nagpur, India",
+  "lastUpdated": "07/2026",
+  "contact": {
+    "email": "sohailqureshi1857@gmail.com",
+    "phone": "+91 9890477983",
+    "github": "#",
+    "linkedin": "#"
+  },
+  "summary": "Full-stack developer with 8+ years of experience across Angular, Node, and Java, building products for healthcare and finance. Currently Consultant (Technical Lead) at Infosys, leading frontend development for a telecom-domain platform. Open to relocation for the right opportunity.",
+  "skills": [
+    { "key": "languages", "items": ["Java", "JavaScript", "TypeScript", "C", "C++"] },
+    { "key": "web", "items": ["Angular", "React", "Node.js", "HTML", "AJAX", "jQuery", "JSON", "GraphQL", "RxJS", "Redux", "NgRx Store", "Kinvey", "Ionic 5"] },
+    { "key": "java_frameworks", "items": ["Spring MVC", "Struts2", "Spring Boot", "Hibernate", "JPA", "log4j"] },
+    { "key": "repo_and_cloud", "items": ["GitHub", "GitLab", "Copilot", "Bitbucket", "Azure", "Jira", "Confluence"] },
+    { "key": "databases", "items": ["MySQL", "MongoDB", "NoSQL", "PostgreSQL"] },
+    { "key": "ide", "items": ["Eclipse", "NetBeans", "VS Code"] },
+    { "key": "os", "items": ["Windows", "Linux"] }
+  ],
+  "experience": [
+    {
+      "title": "Consultant (Technical Lead)",
+      "company": "Infosys",
+      "dates": "09/2022 — Present",
+      "location": "Nagpur, India · Business consulting, IT & outsourcing services",
+      "bullets": [
+        "Frontend lead and developer for a telecom-domain project built in Angular and Java.",
+        "Worked across Angular, NgRx state management, RxJS, JavaScript, and Spring Boot.",
+        "Increased system performance by 30% through optimization strategies and refactoring legacy code.",
+        "Drove adoption of the Copilot initiative on the project, improving bug-fixing speed and enabling new enhancements through more efficient coding practices."
+      ]
+    },
+    {
+      "title": "Application Development Sr. Analyst",
+      "company": "Accenture",
+      "dates": "07/2021 — 09/2022",
+      "location": "Pune, India · Global professional services — digital, cloud & security",
+      "bullets": [
+        "Built hybrid mobile applications for Android/iOS.",
+        "Worked across Angular, NgRx state management, RxJS, JavaScript, Ionic, and Kinvey."
+      ]
+    },
+    {
+      "title": "Technologist",
+      "company": "Kratin LLC",
+      "dates": "02/2019 — 07/2021",
+      "location": "Nagpur, India · Software product & service company",
+      "bullets": [
+        "Developed software applications using Angular, GraphQL, Java, and JavaScript."
+      ]
+    },
+    {
+      "title": "System Engineer",
+      "company": "Harrier Information System",
+      "dates": "10/2017 — 10/2018",
+      "location": "Nagpur, India · Software solutions & services",
+      "bullets": [
+        "Developed and maintained software applications using Spring, Struts2, and the MEAN stack.",
+        "Handled database manipulation with MongoDB and MySQL."
+      ]
+    },
+    {
+      "title": "Java Developer",
+      "company": "Weave",
+      "dates": "10/2016 — 10/2017",
+      "location": "Nagpur, India · Startup focused on innovative software solutions",
+      "bullets": [
+        "Developed and maintained applications using Struts2, Spring, and Hibernate.",
+        "Owned core development, end-to-end testing, and deployment practices.",
+        "Built with HTML/CSS, JavaScript, Java (Spring/Struts), and MySQL for database manipulation."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "MRS (Mobile Reporting System)",
+      "client": "Accenture · Client: Canadian National Railway",
+      "dates": "07/2021 — 09/2022",
+      "description": "Mobile application enabling railcar locomotive drivers to report daily work and track assigned tasks. Senior frontend developer responsible for complex logic and performance management.",
+      "stack": ["Angular 13", "Kinvey", "Redux (NgRx Store)", "Ionic 5", "Azure"]
+    },
+    {
+      "title": "Digital Care",
+      "client": "Kratin LLC · Client: USA Hospice",
+      "dates": "02/2019 — 06/2021",
+      "description": "Hospice care application mapping physician visits and enabling real-time location tracking via a Shift Assistance Android app. Patient data secured per HIPAA guidelines, with Referrals, Crisis Care, Virtual Care, and Screening (Survey) modules. Focused on real-time location tracking and HIPAA compliance.",
+      "stack": ["Angular 8", ".NET Core", "Spring Boot", "MySQL", "UHX Layer (Java)"]
+    },
+    {
+      "title": "Preferred Partner",
+      "client": "Kratin LLC · Client: USA Insurance Org.",
+      "dates": "06/2020 — 06/2021",
+      "description": "Product surfacing insights into hospital performance, treatments, and readmission-rate analysis for insurance company owners. Structured frontend code in Angular to implement complex logic and generate analysis reports using graphs, maps, and scatterplots via D3, integrating a GraphQL API.",
+      "stack": ["Angular 7", "Python", "Django", "GraphQL", "PostgreSQL", "Leaflet Map API"]
+    },
+    {
+      "title": "Gov-Eva & PSS",
+      "client": "Harrier · Client: Parikh Secretarial Support",
+      "dates": "01/2021 — 12/2021",
+      "description": "Company lifecycle platform with 9+ modules spanning finance, governance, operations, and document management. Developed complex modules linking company registration and integration, finance, meetings, compliance, and tasks.",
+      "stack": ["Angular 5", "Node.js", "MongoDB", "Express.js"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering",
+      "school": "RTM Nagpur University, Anjuman College of Engineering and Technology",
+      "years": "08/2010 — 05/2015"
+    },
+    {
+      "degree": "HSC",
+      "school": "V.B. Junior College, Nagpur",
+      "years": "08/2008 — 05/2010"
+    },
+    {
+      "degree": "SSC",
+      "school": "Shri Rajendra High School, Nagpur",
+      "years": "2008"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Software Development",
+      "description": "Developed and enhanced applications using React/Angular and Java across healthcare and finance sectors."
+    },
+    {
+      "title": "Software Upgrade Initiative",
+      "description": "Led migration of a complex application from Angular 5 to Angular 17 and upgraded Webpack, improving performance, security, and dev workflows."
+    }
+  ],
+  "languages": [
+    { "name": "English", "level": "Native" },
+    { "name": "Hindi", "level": "Native" },
+    { "name": "Marathi", "level": "Native" },
+    { "name": "Urdu", "level": "Proficient" }
+  ]
+}
