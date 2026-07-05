@@ -10,7 +10,7 @@
     "github": "#",
     "linkedin": "#"
   },
-  "summary": "I am a Full-Stack Developer and Technical Lead with over 9 years of experience in designing, developing, and delivering enterprise-grade applications across the Banking & Financial Services and Healthcare domains. \n My expertise includes Java, Spring Boot, Angular, React, Node.js, REST APIs, Microservices, SQL, and cloud-based application development. Throughout my career, I have successfully led cross-functional teams, mentored developers, and driven the end-to-end delivery of scalable, high-performance software solutions. /n Currently, I am working as a Lead Analyst at CGI, serving as a Lead Engineer for PNC Bank, where I contribute to the development of an enterprise analytical banking platform. My responsibilities include technical leadership, solution architecture, code reviews, performance optimization, stakeholder collaboration, and mentoring engineering teams to deliver high-quality products.",
+  "summary": "I am a Full-Stack Developer and Technical Lead with over 9+ years of experience in designing, developing, and delivering enterprise-grade applications across the Banking & Financial Services and Healthcare domains. \n My expertise includes Java, Spring Boot, Angular, React, Node.js, REST APIs, Microservices, SQL, and cloud-based application development. Throughout my career, I have successfully led cross-functional teams, mentored developers, and driven the end-to-end delivery of scalable, high-performance software solutions. /n Currently, I am working as a Lead Analyst at CGI, serving as a Lead Engineer for PNC Bank, where I contribute to the development of an enterprise analytical banking platform. My responsibilities include technical leadership, solution architecture, code reviews, performance optimization, stakeholder collaboration, and mentoring engineering teams to deliver high-quality products.",
   "skills": [
     { "key": "languages", "items": ["Java", "JavaScript", "TypeScript", "C", "C++"] },
     { "key": "web", "items": ["Angular", "React", "Node.js", "HTML", "AJAX", "jQuery", "JSON", "GraphQL", "RxJS", "Redux", "NgRx Store", "Kinvey", "Ionic 5"] },
@@ -22,9 +22,19 @@
   ],
   "experience": [
     {
+      "title": "Lead Analyst",
+      "company": "CGI",
+      "dates": "02/2026 — Present",
+      "location": "Hyderabad, India · Business consulting, IT & outsourcing services",
+      "bullets": [
+        "FullStack Developer/Lead for a Banking Application on Retail built in Java and Angular.",
+        "Worked across Java, SpringBoot, Angular, NgRx state management, RxJS, JavaScript And MongoDB."
+      ]
+    },
+    {
       "title": "Consultant (Technical Lead)",
       "company": "Infosys",
-      "dates": "09/2022 — Present",
+      "dates": "09/2022 — 02/2026",
       "location": "Nagpur, India · Business consulting, IT & outsourcing services",
       "bullets": [
         "Frontend lead and developer for a telecom-domain project built in Angular and Java.",
