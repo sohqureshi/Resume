@@ -178,7 +178,23 @@ footer.foot{margin-top:32px;padding-top:16px;border-top:1px solid var(--line);fo
 =================================================================== */
 @media print{
   @page{ size:A4; margin:9mm 11mm; }
+  @page :first { margin-top: 9mm; }
   .topbar{ display:none; }
+  html, body { height:auto; }
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  @supports (-webkit-touch-callout: none) {
+    body { -webkit-print-color-adjust: exact; }
+  }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  @media print {
+    @page {
+      margin: 9mm 11mm;
+      marks: none;
+    }
+  }
   body{
     background:#fff; color:#191d1a;
     font-family:'Inter', Arial, Helvetica, sans-serif;
