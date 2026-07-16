@@ -89,10 +89,10 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line
 .btn:disabled{opacity:0.45;cursor:not-allowed;transform:none;box-shadow:none;}
 .btn svg{width:14px;height:14px;}
 
-.sheet{max-width:960px;margin:0 auto;padding:24px 24px 60px;}
+.sheet{max-width:960px;margin:0 auto;padding:18px 20px 48px;}
 
 /* ---------- header ---------- */
-header.hero{padding-bottom:16px;margin-bottom:18px;border-bottom:2px solid var(--ink);}
+header.hero{padding-bottom:12px;margin-bottom:14px;border-bottom:2px solid var(--ink);}
 .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin:0 0 10px;}
 h1.name{font-family:var(--serif);font-size:clamp(30px,4.6vw,44px);font-weight:600;letter-spacing:-0.01em;margin:0 0 6px;}
 .role{font-size:16px;color:var(--muted);margin:0 0 16px;font-weight:500;}
@@ -105,16 +105,19 @@ h1.name{font-family:var(--serif);font-size:clamp(30px,4.6vw,44px);font-weight:60
 .contact-row svg{width:13px;height:13px;opacity:0.7;}
 
 /* ---------- content layout ---------- */
-.section-stack{display:grid;gap:16px;}
-.full-width-section{display:grid;gap:6px;}
-.split-grid{display:grid;grid-template-columns:minmax(0,0.95fr) minmax(0,1.3fr);gap:18px;align-items:start;}
-.left-stack, .right-stack{display:grid;gap:12px;min-width:0;}
+.section-stack{display:grid;gap:12px;}
+.full-width-section{display:grid;gap:4px;}
+.split-grid{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:14px;align-items:start;}
+.left-stack, .right-stack{display:grid;gap:10px;min-width:0;}
 .sec-head{font-family:var(--mono);font-size:11.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent2);margin:0 0 12px;display:flex;align-items:center;gap:9px;white-space:nowrap;}
 .sec-head::after{content:"";flex:1;height:1px;background:var(--line);} 
 .sec-head.no-divider::after{display:none;}
 
 /* panels */
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;}
+.panel{background:var(--panel);border:none;border-radius:0;padding:0 0 0 0;}
+.left-stack section#education .panel,
+.left-stack section#achievements .panel,
+.left-stack section#languages .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:10px 12px;}
 .skill-row{padding:7px 0;border-bottom:1px dashed var(--line);}
 .skill-row:last-child{border-bottom:none;}
 .skill-key{font-family:var(--mono);font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:5px;}
@@ -178,8 +181,8 @@ footer.foot{margin-top:20px;padding-top:12px;border-top:1px solid var(--line);fo
    (summary, experience, projects) instead of stacking beneath it.
 =================================================================== */
 @media print{
-  @page{ size:A4; margin:9mm 11mm; }
-  @page :first { margin-top: 9mm; }
+  @page{ size:A4; margin:6mm 8mm; }
+  @page :first { margin-top: 6mm; }
   .topbar{ display:none; }
   html, body { height:auto; }
   body {
@@ -204,56 +207,58 @@ footer.foot{margin-top:20px;padding-top:12px;border-top:1px solid var(--line);fo
   }
   .sheet{ max-width:100%; padding:0; }
 
-  header.hero{ border-bottom:1.6pt solid #191d1a; padding-bottom:6pt; margin-bottom:7pt; }
-  .eyebrow{ font-size:7.6pt; color:#0d6e5e; margin-bottom:3pt; }
-  h1.name{ font-family:'Fraunces', Georgia, serif; font-size:19pt; margin-bottom:2pt; }
-  .role{ font-size:9.6pt; margin-bottom:6pt; }
+  header.hero{ border-bottom:1.2pt solid #191d1a; padding-bottom:4pt; margin-bottom:4pt; }
+  .eyebrow{ font-size:7.2pt; color:#0d6e5e; margin-bottom:2pt; }
+  h1.name{ font-family:'Fraunces', Georgia, serif; font-size:17.5pt; margin-bottom:2pt; }
+  .role{ font-size:8.8pt; margin-bottom:4pt; }
   .role span.tag{ color:#3a4a7a; }
-  .contact-row{ font-size:7.8pt; gap:3pt 12pt; }
+  .contact-row{ font-size:7.2pt; gap:2pt 10pt; }
   .contact-row a{ color:#0d6e5e; border-bottom:none; font-weight:500; }
-  .contact-row svg{ width:9px; height:9px; stroke:#0d6e5e; }
+  .contact-row svg{ width:8.5px; height:8.5px; stroke:#0d6e5e; }
 
-  .section-stack{ display:grid; gap:6pt; }
-  .full-width-section{ display:grid; gap:4pt; }
-  .split-grid{ display:grid; grid-template-columns:56mm 1fr; gap:6mm; align-items:start; }
-  .left-stack, .right-stack{ display:grid; gap:5pt; }
-  .left-stack > section, .right-stack > section{ margin-bottom:0; break-inside:avoid; }
+  .section-stack{ display:grid; gap:4pt; }
+  .full-width-section{ display:grid; gap:2pt; }
+  .split-grid{ display:grid; grid-template-columns:53mm 1fr; gap:4mm; align-items:start; }
+  .left-stack, .right-stack{ display:grid; gap:3pt; }
+  .left-stack > section, .right-stack > section, .full-width-section > section{ margin-bottom:0; break-inside:avoid; page-break-inside:avoid; }
 
-  .sec-head{ font-size:7.6pt; color:#3a4a7a; margin-bottom:5pt; letter-spacing:0.05em; }
+  .sec-head{ font-size:7.2pt; color:#3a4a7a; margin-bottom:3pt; letter-spacing:0.05em; }
   .sec-head::after{ background:#dfe3de; }
 
-  .side .panel{ border:0.6pt solid #dde1db; border-radius:5px; padding:6pt 8pt; background:#fbfcfa; }
-  .skill-row{ padding:3.5pt 0; border-bottom:0.5pt dashed #dfe3de; }
-  .skill-key{ font-size:6.6pt; margin-bottom:2.5pt; }
-  .chip{ font-size:6.9pt; padding:1.4pt 5pt; border-radius:4px; background:#eaedf7; color:#2a3670; }
-  .edu-item{ margin-bottom:6pt; }
-  .edu-item .deg{ font-size:8.1pt; }
-  .edu-item .school{ font-size:7.3pt; }
-  .edu-item .yr{ font-size:6.6pt; color:#0d6e5e; }
-  .ach{ margin-bottom:6pt; }
-  .ach b{ font-size:8.1pt; color:#0d6e5e; }
-  .ach span{ font-size:7.3pt; }
-  .lang-list{ gap:4pt; }
-  .lang-chip{ font-size:7.3pt; padding:2pt 6pt; background:#e1f0ec; color:#0d6e5e; }
+  .panel{ padding:4pt 5.5pt; }
+  .side .panel{ border:0.6pt solid #dde1db; border-radius:5px; padding:4pt 5.5pt; background:#fbfcfa; }
+  .skill-row{ padding:2pt 0; border-bottom:0.5pt dashed #dfe3de; }
+  .skill-key{ font-size:6.2pt; margin-bottom:1.8pt; }
+  .chip{ font-size:6.4pt; padding:1pt 4pt; border-radius:4px; background:#eaedf7; color:#2a3670; }
+  .edu-item{ margin-bottom:4.5pt; }
+  .edu-item .deg{ font-size:7.6pt; }
+  .edu-item .school{ font-size:6.9pt; }
+  .edu-item .yr{ font-size:6.2pt; color:#0d6e5e; }
+  .ach{ margin-bottom:4.5pt; }
+  .ach b{ font-size:7.6pt; color:#0d6e5e; }
+  .ach span{ font-size:6.9pt; }
+  .lang-list{ gap:3pt; }
+  .lang-chip{ font-size:6.8pt; padding:1.5pt 5pt; background:#e1f0ec; color:#0d6e5e; }
 
-  p.summary{ font-size:8.7pt; max-width:100%; white-space:pre-wrap; }
+  p.summary{ font-size:7.6pt; line-height:1.22; max-width:100%; white-space:pre-wrap; }
 
-  .job{ padding-left:10pt; margin-bottom:7pt; border-left:1.3pt solid #e1f0ec; break-inside:avoid; }
-  .job::before{ left:-4.5pt; top:3.5pt; width:6.5pt; height:6.5pt; }
-  .job-title{ font-size:8.9pt; }
-  .job-meta{ font-size:6.9pt; padding:1.4pt 6pt; }
-  .job-loc{ font-size:7.3pt; margin-bottom:3pt; }
-  ul.bullets li{ font-size:8.1pt; padding-left:10pt; margin-bottom:2pt; }
-  ul.bullets li::before{ font-size:7pt; }
+  .job{ padding-left:8pt; margin-bottom:4.5pt; border-left:1pt solid #e1f0ec; break-inside:avoid; page-break-inside:avoid; }
+  .job::before{ left:-4pt; top:3pt; width:5.5pt; height:5.5pt; }
+  .job-head{ margin-bottom:1pt; }
+  .job-title{ font-size:8pt; }
+  .job-meta{ font-size:6.3pt; padding:1pt 5pt; }
+  .job-loc{ font-size:6.8pt; margin-bottom:2pt; }
+  ul.bullets li{ font-size:7.2pt; padding-left:8pt; margin-bottom:1pt; line-height:1.15; }
+  ul.bullets li::before{ font-size:6.5pt; top:1pt; }
 
-  .project{ border:0.6pt solid #dde1db; border-left:2pt solid #a3661c; border-radius:5px; padding:5.5pt 7.5pt; margin-bottom:5pt; background:#fefdfb; break-inside:avoid; }
-  .project-title{ font-size:8.5pt; }
-  .project-client{ font-size:7pt; }
-  .project-date{ font-size:6.9pt; }
-  .project p{ font-size:7.8pt; margin:3pt 0; }
-  .stack-line{ font-size:6.7pt; padding:1.6pt 6pt; margin-top:3pt; }
+  .project{ border:0.6pt solid #dde1db; border-left:1.6pt solid #a3661c; border-radius:5px; padding:4.5pt 6pt; margin-bottom:4pt; background:#fefdfb; break-inside:avoid; page-break-inside:avoid; }
+  .project-title{ font-size:7.9pt; }
+  .project-client{ font-size:6.6pt; }
+  .project-date{ font-size:6.3pt; }
+  .project p{ font-size:7.2pt; margin:2.5pt 0; }
+  .stack-line{ font-size:6.2pt; padding:1.2pt 5pt; margin-top:2pt; }
 
-  footer.foot{ display:block; margin-top:7pt; padding-top:5pt; font-size:6.3pt; }
+  footer.foot{ display:block; margin-top:5pt; padding-top:4pt; font-size:6pt; }
   a{ color:#0d6e5e !important; }
 }
 </style>
@@ -402,20 +407,14 @@ function render(data) {
       </section>
 
       <section id="skills-experience" class="full-width-section">
-        <div class="split-grid">
-          <div class="left-stack">
-            <section id="skills">
-              <p class="sec-head">Skills</p>
-              <div class="panel">${skillsHtml}</div>
-            </section>
-          </div>
-          <div class="right-stack">
-            <section id="experience">
-              <p class="sec-head">Experience</p>
-              <div class="panel">${experienceHtml}</div>
-            </section>
-          </div>
-        </div>
+        <section id="skills">
+          <p class="sec-head">Skills</p>
+          <div class="panel">${skillsHtml}</div>
+        </section>
+        <section id="experience">
+          <p class="sec-head">Experience</p>
+          <div class="panel">${experienceHtml}</div>
+        </section>
       </section>
 
       <div class="split-grid">
