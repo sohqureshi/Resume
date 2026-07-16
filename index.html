@@ -115,6 +115,9 @@ h1.name{font-family:var(--serif);font-size:clamp(34px,5vw,48px);font-weight:700;
   
 /* ---------- content layout ---------- */
 .layout-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(240px,0.9fr);gap:24px;align-items:start;}
+.content{display:grid;gap:16px;min-width:0;grid-column:1 / -1;}
+.sidebar{display:grid;gap:16px;min-width:0;grid-column:1 / -1;grid-template-columns:1fr;}
+.content section,.sidebar section{display:grid;gap:10px;}
 .section-stack{display:grid;gap:24px;}
 .full-width-section{display:grid;gap:10px;}
 .sec-head{font-family:var(--mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent2);margin:0 0 16px;display:flex;align-items:center;gap:10px;white-space:nowrap;}
@@ -122,7 +125,9 @@ h1.name{font-family:var(--serif);font-size:clamp(34px,5vw,48px);font-weight:700;
 .sec-head.no-divider::after{display:none;}
   
 /* panels */
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px 18px;}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 8px 24px rgba(17,24,39,0.03);}
+.content .panel{border-left:3px solid var(--accent-soft);} 
+.sidebar .panel{border-left:3px solid var(--accent2-soft);} 
 .skill-row{padding:10px 0;border-bottom:1px dashed var(--line);}
 .skill-row:last-child{border-bottom:none;}
 .skill-key{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px;}
@@ -142,17 +147,22 @@ h1.name{font-family:var(--serif);font-size:clamp(34px,5vw,48px);font-weight:700;
   
 /* main content */
 .summary{font-size:15px;color:#2b3033;white-space:pre-wrap;margin:0;line-height:1.75;}
-.job{position:relative;padding:22px 22px 18px 22px;margin-bottom:16px;border-left:3px solid var(--accent-soft);background:rgba(255,255,255,0.98);border:1px solid var(--line);border-radius:16px;}
+.job{position:relative;display:grid;grid-template-columns:24px minmax(112px, max-content) minmax(0, 1fr);gap:12px;padding:16px 18px 14px 18px;margin-bottom:12px;border:1px solid var(--line);background:rgba(255,255,255,0.98);border-radius:16px;align-items:start;}
 .job:last-child{margin-bottom:0;}
-.job::before{content:"";position:absolute;left:-8px;top:18px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(13,110,94,0.08);}
+.job::before{content:"";position:absolute;left:12px;top:22px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(13,110,94,0.12);z-index:2;}
+.job::after{content:"";position:absolute;left:16px;top:32px;bottom:-12px;width:2px;background:linear-gradient(to bottom, var(--accent), var(--line));}
+.job:last-child::after{display:none;}
+.job-marker{width:24px;display:flex;justify-content:center;align-items:flex-start;padding-top:2px;}
+.job-side{display:flex;align-items:flex-start;justify-content:flex-start;min-width:0;padding-top:2px;}
+.job-side .job-meta{font-family:var(--mono);font-size:10.5px;color:var(--accent2);background:var(--accent2-soft);padding:4px 8px;border-radius:999px;white-space:normal;line-height:1.2;display:inline-block;max-width:100%;text-align:left;}
+.job-content{min-width:0;}
 .job-head{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px;}
 .job-title{font-size:16px;font-weight:700;line-height:1.2;}
 .job-title .co{color:var(--accent);font-weight:600;}
-.job-meta{font-family:var(--mono);font-size:11px;color:#fff;background:var(--accent2);padding:5px 10px;border-radius:999px;white-space:nowrap;}
 .job-loc{font-size:13px;color:var(--muted);margin-bottom:12px;}
 ul.bullets{margin:0;padding-left:0;list-style:none;}
 ul.bullets li{position:relative;padding-left:18px;margin-bottom:10px;font-size:14px;color:#2b3033;line-height:1.7;}
-ul.bullets li::before{content:"▸";position:absolute;left:0;top:2px;color:var(--accent2);font-size:12px;}
+ul.bullets li::before{content:"•";position:absolute;left:0;top:0;color:var(--accent2);font-size:14px;}
   
 .project{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:18px;padding:16px 18px;margin-bottom:16px;}
 .project:last-child{margin-bottom:0;}
@@ -192,8 +202,8 @@ footer.foot{margin-top:32px;padding-top:18px;border-top:1px solid var(--line);fo
    (summary, experience, projects) instead of stacking beneath it.
 =================================================================== */
 @media print{
-  @page{ size:A4; margin:9mm 11mm; }
-  @page :first { margin-top: 9mm; }
+  @page{ size:A4; margin:3mm 5mm; }
+  @page :first { margin-top: 3mm; }
   .topbar{ display:none; }
   html, body { height:auto; }
   body {
@@ -206,69 +216,80 @@ footer.foot{margin-top:32px;padding-top:18px;border-top:1px solid var(--line);fo
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
   @media print {
     @page {
-      margin: 9mm 11mm;
+      margin: 3mm 5mm;
       marks: none;
     }
   }
   body{
     background:#fff; color:#191d1a;
     font-family:'Inter', Arial, Helvetica, sans-serif;
-    font-size:8.7pt; line-height:1.34;
+    font-size:8.1pt; line-height:1.24;
     print-color-adjust:exact; -webkit-print-color-adjust:exact;
   }
   .sheet{ max-width:100%; padding:0; }
-
-  header.hero{ border-bottom:1.6pt solid #191d1a; padding-bottom:6pt; margin-bottom:7pt; }
-  .eyebrow{ font-size:7.6pt; color:#0d6e5e; margin-bottom:3pt; }
-  h1.name{ font-family:'Fraunces', Georgia, serif; font-size:19pt; margin-bottom:2pt; }
-  .role{ font-size:9.6pt; margin-bottom:6pt; }
+  /* .hero{ padding: none !important; } */
+  header.hero{ padding-bottom:8pt; padding-top:8pt; margin-bottom:2pt; }
+  .eyebrow{ font-size:6.8pt; color:#0d6e5e; margin-bottom:1pt; }
+  .hero .tag{ padding: 1pt 4pt; font-size:6.8pt; }
+  h1.name{ font-family:'Fraunces', Georgia, serif; font-size:16pt; margin-bottom:1pt; }
+  .role{ font-size:8.4pt; margin-bottom:2pt; }
   .role span.tag{ color:#3a4a7a; }
-  .contact-row{ font-size:7.8pt; gap:3pt 12pt; }
+  .contact-row{ font-size:7pt; gap:2pt 8pt; }
   .contact-row a{ color:#0d6e5e; border-bottom:none; font-weight:500; }
   .contact-row svg{ width:9px; height:9px; stroke:#0d6e5e; }
+  .contact-row a, .contact-row span{ padding:1pt 4pt; }
+  .section-stack{ display:block; }
+  .full-width-section{ display:block; margin-bottom:5pt; page-break-inside:avoid; break-inside:avoid; }
+  .layout-grid{ display:block; }
+  .content, .sidebar{ display:block; min-width:0; }
+  .content > section, .sidebar > section{ display:block; margin-bottom:5pt; break-inside:avoid; page-break-inside:avoid; }
 
-  .section-stack{ display:grid; gap:6pt; }
-  .full-width-section{ display:grid; gap:4pt; }
-  .layout-grid{ display:grid; grid-template-columns:1fr; gap:4pt; }
-  .split-grid{ display:grid; grid-template-columns:56mm 1fr; gap:6mm; align-items:start; }
-  .left-stack, .right-stack{ display:grid; gap:5pt; }
-  .left-stack > section, .right-stack > section{ margin-bottom:0; break-inside:avoid; }
-
-  .sec-head{ font-size:7.6pt; color:#3a4a7a; margin-bottom:5pt; letter-spacing:0.05em; }
+  .sec-head{ font-size:6.8pt; color:#3a4a7a; margin-bottom:2.5pt; letter-spacing:0.05em; }
   .sec-head::after{ background:#dfe3de; }
 
-  .side .panel{ border:0.6pt solid #dde1db; border-radius:5px; padding:6pt 8pt; background:#fbfcfa; }
-  .skill-row{ padding:3.5pt 0; border-bottom:0.5pt dashed #dfe3de; }
-  .skill-key{ font-size:6.6pt; margin-bottom:2.5pt; }
-  .chip{ font-size:6.9pt; padding:1.4pt 5pt; border-radius:4px; background:#eaedf7; color:#2a3670; }
-  .edu-item{ margin-bottom:6pt; }
-  .edu-item .deg{ font-size:8.1pt; }
-  .edu-item .school{ font-size:7.3pt; }
-  .edu-item .yr{ font-size:6.6pt; color:#0d6e5e; }
-  .ach{ margin-bottom:6pt; }
-  .ach b{ font-size:8.1pt; color:#0d6e5e; }
-  .ach span{ font-size:7.3pt; }
-  .lang-list{ gap:4pt; }
-  .lang-chip{ font-size:7.3pt; padding:2pt 6pt; background:#e1f0ec; color:#0d6e5e; }
+  .panel{ display:block; padding:3.5pt 4.5pt; border:0.6pt solid #dde1db; border-radius:5px; background:#fbfcfa; box-shadow:none; }
+  .side .panel{ border:0.6pt solid #dde1db; border-radius:5px; padding:4pt 5pt; background:#fbfcfa; }
+  .skill-row{ padding:2pt 0; border-bottom:0.5pt dashed #dfe3de; }
+  .skill-key{ font-size:6.4pt; margin-bottom:2pt; }
+  .chip{ font-size:6.4pt; padding:1.1pt 4pt; border-radius:4px; background:#eaedf7; color:#2a3670; }
+  .edu-item{ margin-bottom:3.5pt; }
+  .edu-item .deg{ font-size:7.8pt; }
+  .edu-item .school{ font-size:7pt; }
+  .edu-item .yr{ font-size:6.3pt; color:#0d6e5e; }
+  .ach{ margin-bottom:3.5pt; }
+  .ach b{ font-size:7.8pt; color:#0d6e5e; }
+  .ach span{ font-size:7pt; }
+  .lang-list{ gap:3pt; }
+  .lang-chip{ font-size:6.9pt; padding:1.6pt 5pt; background:#e1f0ec; color:#0d6e5e; }
 
-  p.summary{ font-size:8.7pt; max-width:100%; white-space:pre-wrap; }
+  p.summary{ font-size:8.1pt; max-width:100%; white-space:pre-wrap; }
 
-  .job{ padding-left:10pt; margin-bottom:7pt; border-left:1.3pt solid #e1f0ec; break-inside:avoid; }
-  .job::before{ left:-4.5pt; top:3.5pt; width:6.5pt; height:6.5pt; }
-  .job-title{ font-size:8.9pt; }
-  .job-meta{ font-size:6.9pt; padding:1.4pt 6pt; }
-  .job-loc{ font-size:7.3pt; margin-bottom:3pt; }
-  ul.bullets li{ font-size:8.1pt; padding-left:10pt; margin-bottom:2pt; }
-  ul.bullets li::before{ font-size:7pt; }
+  .job{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .job{ padding:0 0 0 8pt; margin:0 0 4.5pt 0; border-left:1.1pt solid #e1f0ec; border:0; border-radius:0; background:transparent; break-inside:avoid; }
+  .job::before{ display:none; left:-3.2pt; top:2pt; width:5pt; height:5pt; }
+  .job::after{ display:none; }
+  .job-marker{ display:none; }
+  .job-side{ display:block; margin-bottom:2pt; width: 20%; }
+  .job-content{ display:block;  width: 80%;}
+  .job-head{ display:block; margin-bottom:2pt; }
+  .job-title{ font-size:8.1pt; }
+  .job-meta{ font-size:6.2pt; padding:1pt 4.3pt; }
+  .job-loc{ font-size:6.8pt; margin-bottom:2pt; }
+  ul.bullets li{ font-size:7.3pt; padding-left:8pt; margin-bottom:1.3pt; }
+  ul.bullets li::before{ font-size:6.7pt; }
 
-  .project{ border:0.6pt solid #dde1db; border-left:2pt solid #a3661c; border-radius:5px; padding:5.5pt 7.5pt; margin-bottom:5pt; background:#fefdfb; break-inside:avoid; }
-  .project-title{ font-size:8.5pt; }
-  .project-client{ font-size:7pt; }
-  .project-date{ font-size:6.9pt; }
-  .project p{ font-size:7.8pt; margin:3pt 0; }
-  .stack-line{ font-size:6.7pt; padding:1.6pt 6pt; margin-top:3pt; }
+  .project{ display:block; border:0.6pt solid #dde1db; border-left:2pt solid #e1f0ec; border-radius:5px; padding:4pt 5pt; margin-bottom:4pt; background:#fefdfb; break-inside:avoid; }
+  .project-title{ font-size:7.9pt; }
+  .project-client{ font-size:6.7pt; }
+  .project-date{ font-size:6.3pt; }
+  .project p{ font-size:7.2pt; margin:2.2pt 0; }
+  .stack-line{ font-size:6.2pt; padding:1.3pt 5pt; margin-top:2pt; }
 
-  footer.foot{ display:block; margin-top:7pt; padding-top:5pt; font-size:6.3pt; }
+  footer.foot{ display:block; margin-top:3pt; padding-top:2pt; font-size:5.8pt; }
   a{ color:#0d6e5e !important; }
 }
 </style>
@@ -279,9 +300,9 @@ footer.foot{margin-top:32px;padding-top:18px;border-top:1px solid var(--line);fo
     <div class="brand"><b>Resume</b> · <span id="dataFileLabel">Professional profile</span></div>
     <nav aria-label="Resume sections">
       <a class="nav-link" href="#summary">Summary</a>
+      <a class="nav-link" href="#skills">Skills</a>
       <a class="nav-link" href="#experience">Experience</a>
       <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#skills">Skills</a>
       <a class="nav-link" href="#education">Education</a>
     </nav>
     <div class="search-group">
@@ -441,12 +462,17 @@ function render(data) {
 
   const experienceHtml = data.experience.map(job => `
     <div class="job searchable">
-      <div class="job-head">
-        <div class="job-title">${job.title} <span class="co">@ ${job.company}</span></div>
+      <div class="job-marker"></div>
+      <div class="job-side">
         <div class="job-meta">${job.dates}</div>
       </div>
-      <div class="job-loc">${job.location}</div>
-      <ul class="bullets">${job.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
+      <div class="job-content">
+        <div class="job-head">
+          <div class="job-title">${job.title} <span class="co">@ ${job.company}</span></div>
+        </div>
+        <div class="job-loc">${job.location}</div>
+        <ul class="bullets">${job.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
+      </div>
     </div>`).join('');
 
   const projectsHtml = data.projects.map(p => `
@@ -494,23 +520,23 @@ function render(data) {
 
       <div class="layout-grid">
         <div class="content">
-          <section id="experience">
+          <section id="skills">
+            <p class="sec-head">Skills</p>
+            <div class="panel">${skillsHtml}</div>
+          </section>
+
+          <section id="experience" class="full-width-section">
             <p class="sec-head">Experience</p>
             ${experienceHtml}
           </section>
 
-          <section id="projects">
+          <section id="projects" class="full-width-section">
             <p class="sec-head">Selected Projects</p>
             ${projectsHtml}
           </section>
         </div>
 
         <aside class="sidebar">
-          <section id="skills">
-            <p class="sec-head">Skills</p>
-            <div class="panel">${skillsHtml}</div>
-          </section>
-
           <section id="education">
             <p class="sec-head">Education</p>
             <div class="panel">${educationHtml}</div>
