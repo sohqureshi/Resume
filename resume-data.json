@@ -86,6 +86,20 @@
   ],
   "projects": [
     {
+      "title": "Canvas",
+      "client": "Infosys · Client: Veizon, USA",
+      "dates": "03/2025 — 02/2026",
+      "description": "Complete revamp of the existing Verizon application, implementing new features and enhancing performance from old legacy .Net to Spring and React. Responsible for leading frontend/ backend development, complex logic implementation, and ensuring optimal performance.",
+      "stack": ["React", "Java", "Spring Boot", "Redux (NgRx Store)", "PostgreSQL", "Jira", "Confluence", "Jenkins"]
+    },
+    {
+      "title": "PACA (Priority Access and Channel Assignment)",
+      "client": "Infosys · Client: Telstra, Australia",
+      "dates": "09/2022 — 03/2025",
+      "description": "Telecom application for Telstra, Australia, enabling customers to manage their mobile plans and access priority services. Responsible for implementing complex logic and ensuring optimal performance.",
+      "stack": ["Angular 16", "Java", "Spring Boot", "Redux (NgRx Store)", "PostgreSQL", "Bamboo", "Jira", "Confluence", "Jenkins"]
+    },
+    {
       "title": "MRS (Mobile Reporting System)",
       "client": "Accenture · Client: Canadian National Railway",
       "dates": "07/2021 — 09/2022",
