@@ -12,14 +12,123 @@
   },
   "summary": "I am a Full-Stack Developer and Technical Lead with over 9+ years of experience in designing, developing, and delivering enterprise-grade applications across the Banking & Financial Services and Healthcare domains.\n\nMy expertise includes Java, Spring Boot, Angular, React, Node.js, REST APIs, Microservices, SQL, and cloud-based application development. Throughout my career, I have successfully led cross-functional teams, mentored developers, and driven the end-to-end delivery of scalable, high-performance software solutions.\n\nCurrently, I am working as a Lead Analyst at CGI, serving as a Lead Engineer for PNC Bank, where I contribute to the development of an enterprise analytical banking platform. My responsibilities include technical leadership, solution architecture, code reviews, performance optimization, stakeholder collaboration, and mentoring engineering teams to deliver high-quality products.",
   "skills": [
-    { "key": "languages", "items": ["Java", "JavaScript", "TypeScript", "C", "C++"] },
-    { "key": "web", "items": ["Angular", "React", "Node.js", "HTML", "AJAX", "jQuery", "JSON", "GraphQL", "RxJS", "Redux", "NgRx Store", "Kinvey", "Ionic 5"] },
-    { "key": "java_frameworks", "items": ["Spring MVC", "Struts2", "Spring Boot", "Hibernate", "JPA", "log4j"] },
-    { "key": "repo_and_cloud", "items": ["GitHub", "GitLab", "Copilot", "Bitbucket", "Azure", "Jira", "Confluence"] },
-    { "key": "databases", "items": ["MySQL", "MongoDB", "NoSQL", "PostgreSQL"] },
-    { "key": "ide", "items": ["Eclipse", "NetBeans", "IntelliJIdea", "VS Code"] },
-    { "key": "os", "items": ["Windows", "Linux"] }
-  ],
+  {
+    "key": "languages",
+    "items": [
+      "Java",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "C",
+      "C++"
+    ]
+  },
+  {
+    "key": "front_end",
+    "items": [
+      "Angular 7-18",
+      "React",
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Responsive Design",
+      "RxJS",
+      "NgRx",
+      "Redux",
+      "GraphQL",
+      "Node.js",
+      "AJAX",
+      "jQuery",
+      "JSON",
+      "Kinvey",
+      "Ionic 5"
+    ]
+  },
+  {
+    "key": "performance",
+    "items": [
+      "Lazy Loading",
+      "Code Splitting",
+      "Bundle Optimization",
+      "Change Detection Optimization",
+      "Virtual Scrolling"
+    ]
+  },
+  {
+    "key": "testing",
+    "items": [
+      "Jasmine",
+      "Karma",
+      "Jest",
+      "Cypress",
+      "React Testing Library"
+    ]
+  },
+  {
+    "key": "accessibility",
+    "items": [
+      "WCAG",
+      "ARIA",
+      "Semantic HTML"
+    ]
+  },
+  {
+    "key": "build_tools",
+    "items": [
+      "Webpack",
+      "Vite",
+      "npm",
+      "Yarn"
+    ]
+  },
+  {
+    "key": "java_frameworks",
+    "items": [
+      "Spring MVC",
+      "Struts2",
+      "Spring Boot",
+      "Hibernate",
+      "JPA",
+      "log4j"
+    ]
+  },
+  {
+    "key": "repo_and_cloud",
+    "items": [
+      "GitHub",
+      "GitLab",
+      "Bitbucket",
+      "Azure",
+      "Jira",
+      "Confluence",
+      "GitHub Copilot"
+    ]
+  },
+  {
+    "key": "databases",
+    "items": [
+      "MySQL",
+      "MongoDB",
+      "PostgreSQL",
+      "NoSQL"
+    ]
+  },
+  {
+    "key": "ide",
+    "items": [
+      "IntelliJ IDEA",
+      "VS Code",
+      "Eclipse",
+      "NetBeans"
+    ]
+  },
+  {
+    "key": "os",
+    "items": [
+      "Windows",
+      "Linux"
+    ]
+  }
+]
   "experience": [
     {
       "title": "Lead Analyst",
