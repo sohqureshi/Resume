@@ -1,239 +1,321 @@
 {
   "name": "Mohammad Sohail Qureshi",
-  "title": "Full-Stack Developer",
-  "titleTags": ["Java", "Spring Boot", "Angular", "React", "Node.js", "REST APIs", "Microservices", "SQL", "Cloud"],
+  "title": "Full-Stack Engineer",
+  "titleTags": [
+    "Java",
+    "Spring Boot",
+    "Angular",
+    "React",
+    "Microservices",
+    "REST APIs",
+    "TypeScript",
+    "Node.js",
+    "LLM Tooling"
+  ],
   "location": "Hyderabad, India",
-  "lastUpdated": "07/2026",
+  "lastUpdated": "09/2026",
   "contact": {
     "email": "sohailqureshi1857@gmail.com",
     "phone": "+91 9890477983",
     "github": "https://github.com/sohqureshi",
     "linkedin": "https://linkedin.com/in/mohammadsohailqureshi"
   },
-  "summary": "I am a Full-Stack Developer and Technical Lead with over 10 years of experience in designing, developing, and delivering enterprise-grade applications across the Banking & Financial Services and Healthcare domains.\n\nMy expertise includes Java, Spring Boot, Angular, React, Node.js, REST APIs, Microservices, SQL, and cloud-based application development. Throughout my career, I have successfully led cross-functional teams, mentored developers, and driven the end-to-end delivery of scalable, high-performance software solutions.\n\nCurrently, I am working as a Lead Analyst at CGI, serving as a Lead Engineer for PNC Bank, where I contribute to the development of an enterprise analytical banking platform. My responsibilities include technical leadership, solution architecture, code reviews, performance optimization, stakeholder collaboration, and mentoring engineering teams to deliver high-quality products.",
+  "summary": "Lead Full-Stack Engineer with 10 years of experience designing, developing, and delivering enterprise applications across Banking & Financial Services, Telecom, Healthcare, and Insurance. Strong expertise in Java, Spring Boot, Microservices, Angular, React, TypeScript, Node.js, REST APIs, and SQL, with hands-on experience across application architecture, technical design, performance optimization, and full-stack development. Currently working at CGI as a Lead Analyst on a PNC Bank engagement, contributing to retail banking applications and collaborating across frontend and backend engineering. Also an open-source developer and creator of TokenWise, an NPM-based LLM token optimization toolkit.",
   "skills": [
-  {
-    "key": "languages",
-    "items": [
-      "Java",
-      "JavaScript (ES6+)",
-      "TypeScript",
-      "C",
-      "C++"
-    ]
-  },
-  {
-    "key": "front_end",
-    "items": [
-      "Angular 7-18",
-      "React",
-      "HTML5",
-      "CSS3",
-      "SCSS",
-      "Responsive Design",
-      "RxJS",
-      "NgRx",
-      "Redux",
-      "GraphQL",
-      "Node.js",
-      "AJAX",
-      "jQuery",
-      "JSON",
-      "Kinvey",
-      "Ionic 5"
-    ]
-  },
-  {
-    "key": "performance",
-    "items": [
-      "Lazy Loading",
-      "Code Splitting",
-      "Bundle Optimization",
-      "Change Detection Optimization",
-      "Virtual Scrolling"
-    ]
-  },
-  {
-    "key": "testing",
-    "items": [
-      "Jasmine",
-      "Karma",
-      "Jest",
-      "Cypress",
-      "React Testing Library"
-    ]
-  },
-  {
-    "key": "accessibility",
-    "items": [
-      "WCAG",
-      "ARIA",
-      "Semantic HTML"
-    ]
-  },
-  {
-    "key": "build_tools",
-    "items": [
-      "Webpack",
-      "Vite",
-      "npm",
-      "Yarn"
-    ]
-  },
-  {
-    "key": "java_frameworks",
-    "items": [
-      "Spring MVC",
-      "Struts2",
-      "Spring Boot",
-      "Hibernate",
-      "JPA",
-      "log4j"
-    ]
-  },
-  {
-    "key": "repo_and_cloud",
-    "items": [
-      "GitHub",
-      "GitLab",
-      "Bitbucket",
-      "Azure",
-      "Jira",
-      "Confluence",
-      "GitHub Copilot"
-    ]
-  },
-  {
-    "key": "databases",
-    "items": [
-      "MySQL",
-      "MongoDB",
-      "PostgreSQL",
-      "NoSQL"
-    ]
-  },
-  {
-    "key": "ide",
-    "items": [
-      "IntelliJ IDEA",
-      "VS Code",
-      "Eclipse",
-      "NetBeans"
-    ]
-  },
-  {
-    "key": "os",
-    "items": [
-      "Windows",
-      "Linux"
-    ]
-  }
-],
+    {
+      "key": "languages",
+      "items": [
+        "Java",
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "SQL"
+      ]
+    },
+    {
+      "key": "backend",
+      "items": [
+        "Spring Boot",
+        "Spring MVC",
+        "Spring Security",
+        "Spring Data JPA",
+        "Hibernate",
+        "Microservices",
+        "REST APIs",
+        "Node.js"
+      ]
+    },
+    {
+      "key": "front_end",
+      "items": [
+        "Angular",
+        "React",
+        "HTML5",
+        "CSS3",
+        "SCSS",
+        "Responsive Design",
+        "RxJS",
+        "NgRx",
+        "Redux"
+      ]
+    },
+    {
+      "key": "databases",
+      "items": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "SQL",
+        "NoSQL"
+      ]
+    },
+    {
+      "key": "testing",
+      "items": [
+        "JUnit",
+        "Mockito",
+        "Jest",
+        "Cypress",
+        "Jasmine",
+        "Karma",
+        "React Testing Library"
+      ]
+    },
+    {
+      "key": "performance",
+      "items": [
+        "Lazy Loading",
+        "Code Splitting",
+        "Bundle Optimization",
+        "Change Detection Optimization",
+        "Virtual Scrolling"
+      ]
+    },
+    {
+      "key": "ai_llm",
+      "items": [
+        "LLM Token Optimization",
+        "Prompt Optimization",
+        "Tokenization",
+        "tiktoken",
+        "AI API Integration"
+      ]
+    },
+    {
+      "key": "build_tools",
+      "items": [
+        "Webpack",
+        "Vite",
+        "npm",
+        "Yarn"
+      ]
+    },
+    {
+      "key": "cloud_devops",
+      "items": [
+        "Azure",
+        "Docker",
+        "Jenkins",
+        "GitHub Actions",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Bitbucket"
+      ]
+    },
+    {
+      "key": "tools",
+      "items": [
+        "Jira",
+        "Confluence",
+        "GitHub Copilot",
+        "IntelliJ IDEA",
+        "VS Code"
+      ]
+    },
+    {
+      "key": "accessibility",
+      "items": [
+        "WCAG",
+        "ARIA",
+        "Semantic HTML"
+      ]
+    }
+  ],
   "experience": [
     {
       "title": "Lead Analyst",
       "company": "CGI",
       "dates": "02/2026 — Present",
-      "location": "Hyderabad, India · Business consulting, IT & outsourcing services",
+      "location": "Hyderabad, India · PNC Bank GCC",
       "bullets": [
-        "FullStack Developer/Lead for a Banking Application on Retail built in Java and Angular.",
-        "Worked across Java, SpringBoot, Angular, NgRx state management, RxJS, JavaScript And MongoDB."
+        "Working as a Lead Full-Stack Engineer on retail banking applications for PNC Bank, contributing to enterprise-grade financial technology solutions.",
+        "Developing and enhancing full-stack applications using Java, Spring Boot, Angular, TypeScript, RxJS, NgRx, JavaScript, and MongoDB.",
+        "Contributing to technical design, application architecture, code reviews, performance optimization, and engineering best practices.",
+        "Collaborating with cross-functional teams and stakeholders to deliver scalable and maintainable banking solutions.",
+        "Providing technical guidance and mentoring across frontend and backend development."
       ]
     },
     {
       "title": "Consultant (Technical Lead)",
       "company": "Infosys",
       "dates": "09/2022 — 02/2026",
-      "location": "Nagpur, India · Business consulting, IT & outsourcing services",
+      "location": "Nagpur, India",
       "bullets": [
-        "Frontend lead and developer for a telecom-domain project built in Angular and Java.",
-        "Worked across Angular, NgRx state management, RxJS, JavaScript, and Spring Boot.",
-        "Increased system performance by 30% through optimization strategies and refactoring legacy code."
+        "Worked as a Technical Lead and Full-Stack Developer across enterprise telecom applications using Angular, Java, Spring Boot, and PostgreSQL.",
+        "Led frontend and backend development activities, collaborating with engineers across application modules and technical areas.",
+        "Designed and implemented complex business workflows using Angular, NgRx, RxJS, Java, and Spring Boot.",
+        "Improved application performance by approximately 30% through code optimization, refactoring, and frontend performance strategies.",
+        "Participated in technical design, code reviews, defect resolution, and delivery of production-ready features."
       ]
     },
     {
       "title": "Application Development Sr. Analyst",
       "company": "Accenture",
       "dates": "07/2021 — 09/2022",
-      "location": "Pune, India · Global professional services — digital, cloud & security",
+      "location": "Pune, India",
       "bullets": [
-        "Built hybrid mobile applications for Android/iOS.",
-        "Worked across Angular, NgRx state management, RxJS, JavaScript, Ionic, and Kinvey."
+        "Developed hybrid mobile applications using Angular, Ionic, Kinvey, and TypeScript for enterprise users.",
+        "Implemented complex frontend workflows using Angular, NgRx, RxJS, and JavaScript.",
+        "Contributed to application performance, debugging, testing, and production releases.",
+        "Collaborated with cross-functional teams to deliver features for a mobile reporting platform."
       ]
     },
     {
       "title": "Technologist",
       "company": "Kratin LLC",
       "dates": "02/2019 — 07/2021",
-      "location": "Nagpur, India · Software product & service company",
+      "location": "Nagpur, India",
       "bullets": [
-        "Developed software applications using Angular, GraphQL, Java, and JavaScript."
+        "Developed enterprise healthcare and insurance applications using Angular, Java, Spring Boot, GraphQL, and JavaScript.",
+        "Implemented complex business workflows and data-driven interfaces for healthcare and insurance use cases.",
+        "Worked with GraphQL APIs, PostgreSQL, MySQL, and real-time application features."
       ]
     },
     {
       "title": "System Engineer",
       "company": "Harrier Information System",
       "dates": "10/2017 — 10/2018",
-      "location": "Nagpur, India · Software solutions & services",
+      "location": "Nagpur, India",
       "bullets": [
         "Developed and maintained software applications using Spring, Struts2, and the MEAN stack.",
-        "Handled database manipulation with MongoDB and MySQL."
+        "Designed and implemented application features using Java, Angular, Node.js, and JavaScript.",
+        "Handled database operations and data management using MongoDB and MySQL."
       ]
     },
     {
       "title": "Java Developer",
       "company": "Weave",
       "dates": "10/2016 — 10/2017",
-      "location": "Nagpur, India · Startup focused on innovative software solutions",
+      "location": "Nagpur, India",
       "bullets": [
-        "Developed and maintained applications using Struts2, Spring, and Hibernate.",
-        "Owned core development, end-to-end testing, and deployment practices.",
-        "Built with HTML/CSS, JavaScript, Java (Spring/Struts), and MySQL for database manipulation."
+        "Developed and maintained enterprise applications using Java, Spring, Struts2, and Hibernate.",
+        "Worked on end-to-end feature development, testing, debugging, and deployment.",
+        "Built web application components using HTML, CSS, JavaScript, Java, and MySQL."
       ]
     }
   ],
   "projects": [
     {
-      "title": "Canvas",
-      "client": "Infosys · Client: Veizon, USA",
-      "dates": "03/2025 — 02/2026",
-      "description": "Complete revamp of the existing Verizon application, implementing new features and enhancing performance from old legacy .Net to Spring and React. Responsible for leading frontend/ backend development, complex logic implementation, and ensuring optimal performance.",
-      "stack": ["React", "Java", "Spring Boot", "Redux (NgRx Store)", "PostgreSQL", "Jira", "Confluence", "Jenkins"]
+      "title": "TokenWise",
+      "client": "Open Source · Personal Project",
+      "dates": "2026 — Present",
+      "description": "Open-source TypeScript/NPM toolkit for optimizing structured data before sending it to Large Language Models. Provides transformations and analysis capabilities to reduce unnecessary token consumption while preserving useful information for LLM workflows. Includes an interactive browser-based playground and developer-focused APIs.",
+      "stack": [
+        "TypeScript",
+        "Node.js",
+        "NPM",
+        "LLM",
+        "Tokenization",
+        "tiktoken",
+        "Vitest",
+        "GitHub Pages"
+      ]
     },
     {
-      "title": "PACA (Project And Contracting Application)",
+      "title": "Canvas",
+      "client": "Infosys · Client: Verizon, USA",
+      "dates": "03/2025 — 02/2026",
+      "description": "Modernization of an existing Verizon application, migrating legacy .NET functionality toward a modern React and Spring Boot architecture. Led frontend and backend development, implemented complex business logic, contributed to application design, and focused on performance and maintainability.",
+      "stack": [
+        "React",
+        "Java",
+        "Spring Boot",
+        "Redux",
+        "PostgreSQL",
+        "Jenkins",
+        "Jira",
+        "Confluence"
+      ]
+    },
+    {
+      "title": "PACA (Project and Contracting Application)",
       "client": "Infosys · Client: Telstra, Australia",
       "dates": "09/2022 — 03/2025",
-      "description": "It is a core software system used by the company to manage design and construction projects. Where I am Responsible for implementing complex logic and ensuring optimal performance.",
-      "stack": ["Angular 16", "Java", "Spring Boot", "Redux (NgRx Store)", "PostgreSQL", "Bamboo", "Jira", "Confluence", "Jenkins"]
+      "description": "Enterprise application used to manage design and construction projects. Developed complex business workflows and frontend functionality while focusing on application performance, maintainability, and reliable delivery.",
+      "stack": [
+        "Angular 16",
+        "Java",
+        "Spring Boot",
+        "NgRx",
+        "PostgreSQL",
+        "Bamboo",
+        "Jenkins",
+        "Jira",
+        "Confluence"
+      ]
     },
     {
       "title": "MRS (Mobile Reporting System)",
       "client": "Accenture · Client: Canadian National Railway",
       "dates": "07/2021 — 09/2022",
-      "description": "Mobile application enabling railcar locomotive drivers to report daily work and track assigned tasks. Senior frontend developer responsible for complex logic and performance management.",
-      "stack": ["Angular 13", "Kinvey", "Redux (NgRx Store)", "Ionic 5", "Azure"]
+      "description": "Mobile application enabling railcar locomotive drivers to report daily work and track assigned tasks. Worked as a senior frontend developer responsible for complex business logic, application performance, and user workflows.",
+      "stack": [
+        "Angular 13",
+        "Kinvey",
+        "NgRx",
+        "Ionic 5",
+        "Azure"
+      ]
     },
     {
       "title": "Digital Care",
       "client": "Kratin LLC · Client: USA Hospice",
       "dates": "02/2019 — 06/2021",
-      "description": "Hospice care application mapping physician visits and enabling real-time location tracking via a Shift Assistance Android app. Patient data secured per HIPAA guidelines, with Referrals, Crisis Care, Virtual Care, and Screening (Survey) modules. Focused on real-time location tracking and HIPAA compliance.",
-      "stack": ["Angular 8", ".NET Core", "Spring Boot", "MySQL", "UHX Layer (Java)"]
+      "description": "Healthcare application supporting hospice care workflows, physician visits, real-time location tracking, referrals, crisis care, virtual care, and screening modules. Contributed to real-time tracking functionality and secure handling of healthcare data.",
+      "stack": [
+        "Angular 8",
+        ".NET Core",
+        "Spring Boot",
+        "MySQL",
+        "Java"
+      ]
     },
     {
       "title": "Preferred Partner",
-      "client": "Kratin LLC · Client: USA Insurance Org.",
+      "client": "Kratin LLC · Client: USA Insurance Organization",
       "dates": "06/2020 — 06/2021",
-      "description": "Product surfacing insights into hospital performance, treatments, and readmission-rate analysis for insurance company owners. Structured frontend code in Angular to implement complex logic and generate analysis reports using graphs, maps, and scatterplots via D3, integrating a GraphQL API.",
-      "stack": ["Angular 7", "Python", "Django", "GraphQL", "PostgreSQL", "Leaflet Map API"]
+      "description": "Insurance analytics platform providing insights into hospital performance, treatments, and readmission rates. Developed complex Angular interfaces and integrated GraphQL APIs for data-driven reports, maps, graphs, and scatterplots.",
+      "stack": [
+        "Angular 7",
+        "Python",
+        "Django",
+        "GraphQL",
+        "PostgreSQL",
+        "Leaflet Map API",
+        "D3"
+      ]
     },
     {
       "title": "Gov-Eva & PSS",
       "client": "Harrier · Client: Parikh Secretarial Support",
       "dates": "01/2021 — 12/2021",
-      "description": "Company lifecycle platform with 9+ modules spanning finance, governance, operations, and document management. Developed complex modules linking company registration and integration, finance, meetings, compliance, and tasks.",
-      "stack": ["Angular 5", "Node.js", "MongoDB", "Express.js"]
+      "description": "Company lifecycle platform covering finance, governance, operations, compliance, meetings, tasks, and document management. Developed complex modules and integrations supporting company registration, finance, compliance, and operational workflows.",
+      "stack": [
+        "Angular 5",
+        "Node.js",
+        "MongoDB",
+        "Express.js"
+      ]
     }
   ],
   "education": [
@@ -241,32 +323,38 @@
       "degree": "Bachelor of Engineering",
       "school": "RTM Nagpur University, Anjuman College of Engineering and Technology",
       "years": "08/2010 — 05/2015"
-    },
-    {
-      "degree": "HSC",
-      "school": "V.B. Junior College, Nagpur",
-      "years": "08/2008 — 05/2010"
-    },
-    {
-      "degree": "SSC",
-      "school": "Shri Rajendra High School, Nagpur",
-      "years": "2008"
     }
   ],
   "achievements": [
     {
-      "title": "Software Development",
-      "description": "Developed and enhanced applications using React/Angular and Java across healthcare and finance sectors."
+      "title": "Application Performance",
+      "description": "Improved enterprise application performance by approximately 30% through frontend optimization, refactoring, and performance-focused engineering practices."
     },
     {
-      "title": "Software Upgrade Initiative",
-      "description": "Led migration of a complex application from Angular 5 to Angular 17 and upgraded Webpack, improving performance, security, and dev workflows."
+      "title": "Angular Modernization",
+      "description": "Led the modernization of a complex enterprise application from Angular 5 to Angular 17, including Webpack upgrades and improvements to performance, security, and development workflows."
+    },
+    {
+      "title": "Open Source Development",
+      "description": "Created and published TokenWise, an open-source NPM toolkit focused on LLM token optimization and structured data transformation."
     }
   ],
   "languages": [
-    { "name": "English", "level": "Native" },
-    { "name": "Hindi", "level": "Native" },
-    { "name": "Marathi", "level": "Native" },
-    { "name": "Urdu", "level": "Proficient" }
+    {
+      "name": "English",
+      "level": "Professional"
+    },
+    {
+      "name": "Hindi",
+      "level": "Native"
+    },
+    {
+      "name": "Marathi",
+      "level": "Native"
+    },
+    {
+      "name": "Urdu",
+      "level": "Proficient"
+    }
   ]
 }
